@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>iSpLib - An Intelligent Sparse Library - ICICLE Training Catalog</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/cards.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "iSpLib - An Intelligent Sparse Library";
+        var mkdocs_page_input_path = "iSpLib/README.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ICICLE Training Catalog
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">ICICLE Training Catalog</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI for CI-for-AI</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Harp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../harp/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Cheetah</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../harp/cheetah/">Index</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/">Index</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/build_summit/">How to build the dependencies on Summit</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/build_theta/">How to build dependencies on Theta</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >01 eulers number</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/examples/01-eulers_number/">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Install script source</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../harp/install-script-source/">README</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Example</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/install-script-source/example/">Local Install Script Example</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >iSpLib</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">iSpLib - An Intelligent Sparse Library</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#system-requirements">System Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#troubleshoot">Troubleshoot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#convention-and-usage">Convention and Usage</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#performance-and-testing">Performance and Testing</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#spmm-example">SpMM Example</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#license">License</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Architecture and Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Base_ICICLE_Tapis_Software/">Base ICICLE Tapis Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Event_Engine/">Event Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Hello icicle auth clients</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../hello_icicle_auth_clients/">Hello ICICLE Authentication Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Icicle rel 03 2023</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../hello_icicle_auth_clients/icicle_rel_03_2023/">Hello ICICLE Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >CLI</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../hello_icicle_auth_clients/icicle_rel_03_2023/CLI/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >ICICONSOLE</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >TapisCL ICICLE</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Notebooks</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../hello_icicle_auth_clients/icicle_rel_03_2023/Notebooks/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Images</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../hello_icicle_auth_clients/images/readme/">Readme</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tapis_Pods_Service/">Tapis Pods Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CI_Components_Catalog/">CI Components Catalog</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Animal Ecoloy</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital Agriculture</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Smart Foodsheds</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >PPODLinkML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../PPODLinkML/">PPOD_FSL - A LinkML Schema for UC Davis Food Systems Lab Applications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PPODLinkML/LICENSE/">LICENSE</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Smart_Foodsheds_Visual_Analytics_Dashboard/">Smart Foodsheds Visual Analytics Dashboard</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ICICLE Training Catalog</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AI for CI-for-AI</li>
+          <li class="breadcrumb-item">iSpLib</li>
+      <li class="breadcrumb-item active">iSpLib - An Intelligent Sparse Library</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="isplib-an-intelligent-sparse-library">iSpLib - An Intelligent Sparse Library</h1>
+<p>iSpLib is an accelerated sparse kernel library with PyTorch interface. This library has an auto-tuner which generates optimized custom sparse kernels based on the user environment. The goal of this library is to provide efficient sparse operations for Graph Neural Network implementations. Currently it has support for CPU-based efficient Sparse Dense Matrix Multiplication (spmm-sum only) with autograd.</p>
+<p align="center"><img src="fusedmm-workflow.png" alt="iSpLib Workflow" width="60%"/></p>
+
+<h2 id="system-requirements">System Requirements</h2>
+<p>Users need to have the following software/tools installed in their PC/server. The source code was compiled and run successfully in Linux (Ubuntu and Centos distributions).</p>
+<pre><code>Make &gt;= 4.4
+GCC &gt;= 10.1 (Support for C++ &gt;= 14)
+OpenMP &gt;= 4.5
+Python &gt;= 3.7
+NumPy &gt;= 1.21 (Or, Anaconda environment)
+</code></pre>
+<h2 id="installation">Installation</h2>
+<p>To install the package, run the following commands:</p>
+<ul>
+<li><code>git clone https://github.com/ICICLE-ai/iSpLib.git</code>: To clone this repository.</li>
+<li><code>./configure</code>: To download and run the auto-tuner. This is a pre-requisite for the installation.</li>
+<li>Create a virtualenv as the packages might conflict.</li>
+<li>Install the dependencies <code>pip install torch torchvision scikit-learn torch-scatter</code>.</li>
+<li><code>make</code>: To install the library.</li>
+<li>Finally install custom version of torch-geometric <code>pip install git+https://github.com/gamparohit/pytorch_geometric.git</code></li>
+</ul>
+<h2 id="troubleshoot">Troubleshoot</h2>
+<ul>
+<li>If <code>make</code> command exits with unknown error message, try running <code>pip3 install -e .</code> instead.</li>
+<li>If you are having trouble installing torch-scatter, install it with -f flag and torch version. </li>
+</ul>
+<pre><code>import torch
+print(torch.__version__)
+!pip install torch-scatter -f https://data.pyg.org/whl/torch-{torch.__version__}.html
+</code></pre>
+<h2 id="convention-and-usage">Convention and Usage</h2>
+<p>The current iSpLib has both regular and optimized SpMM operation for comparison purpose. The default operation is non-optimized. To use the optimized version, use the following code snippet for running the GNN model:</p>
+<pre><code>import builtins
+builtins.FUSEDMM = True
+</code></pre>
+<p>FusedMM method is used as the optimized sparse kernel and it is generated when <code>./configure</code> command is run. See details here: <a href="https://arxiv.org/abs/2011.06391">FusedMM Method</a>.</p>
+<p><strong>Note: If you are not using the optimized kernel, you will still have to explicitly mention <code>builtins.FUSEDMM = False</code> in the code, otherwise it will raise an error.</strong></p>
+<h2 id="performance-and-testing">Performance and Testing</h2>
+<p>When compared to PyTorch Sparse, a 2-layer GCN implemention with 10 epochs is typically-</p>
+<ul>
+<li><strong>2.5x</strong> faster on Cora dataset</li>
+<li><strong>2x</strong> faster on Reddit dataset</li>
+</ul>
+<p>[Note: The speed-up varies largly depending on the system condition]</p>
+<p>To run the test code, use the command: <code>make test</code>. This runs the python script in <code>tests/GCN.py</code> and prints out the speed-up along with the accuracy. See <code>tests/Expected_GCN_output.txt</code> for reference.</p>
+<h3 id="spmm-example">SpMM Example</h3>
+<p>The SpMM operation can also be used directly to multiply two compatible matrices. Following is an example of a sparse and dense matrix multiplication:</p>
+<pre><code>import builtins
+from isplib.matmul import *
+from isplib.tensor import SparseTensor
+from scipy.sparse import coo_matrix
+import torch 
+
+index = torch.tensor([[0, 0, 1, 2, 2],
+                      [0, 2, 1, 0, 1]])
+value = torch.Tensor([1, 2, 4, 1, 3])
+matrix = torch.Tensor([[90, 4], [2, 5], [3, 6]])
+
+a = SparseTensor.from_scipy(coo_matrix((value, index), shape=(3, 3)))
+b = matrix
+builtins.FUSEDMM = True
+print(spmm_sum(a, b))
+</code></pre>
+<h2 id="license">License</h2>
+<p>iSpLib is licensed under the https://opensource.org/licenses/BSD-3-Clause</p>
+<h1 id="acknowledgements">Acknowledgements</h1>
+<p><em>This work has been funded by grants from the National Science Foundation, including the ICICLE AI Institute (OAC 2112606)</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../harp/install-script-source/example/" class="btn btn-neutral float-left" title="Local Install Script Example"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Base_ICICLE_Tapis_Software/" class="btn btn-neutral float-right" title="Base ICICLE Tapis Software">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../harp/install-script-source/example/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Base_ICICLE_Tapis_Software/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/tooltips.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

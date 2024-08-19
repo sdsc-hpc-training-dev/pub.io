@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number - ICICLE Training Catalog</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/cards.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Estimating walltime to execute \"calc_e.py\" with given configurations for application: Calculating Euler\u0027s number";
+        var mkdocs_page_input_path = "harp/examples/01-eulers_number/README.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> ICICLE Training Catalog
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">ICICLE Training Catalog</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI for CI-for-AI</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Harp</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Cheetah</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cheetah/">Index</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../cheetah/tests/">Index</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../cheetah/tests/build_summit/">How to build the dependencies on Summit</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../cheetah/tests/build_theta/">How to build dependencies on Theta</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Examples</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" >01 eulers number</a>
+    <ul class="current">
+                <li class="toctree-l4 current"><a class="reference internal current" href="#">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Install script source</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../install-script-source/">README</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Example</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../install-script-source/example/">Local Install Script Example</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >iSpLib</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../iSpLib/">iSpLib - An Intelligent Sparse Library</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Architecture and Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Base_ICICLE_Tapis_Software/">Base ICICLE Tapis Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Event_Engine/">Event Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Hello icicle auth clients</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hello_icicle_auth_clients/">Hello ICICLE Authentication Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Icicle rel 03 2023</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../hello_icicle_auth_clients/icicle_rel_03_2023/">Hello ICICLE Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >CLI</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../hello_icicle_auth_clients/icicle_rel_03_2023/CLI/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >ICICONSOLE</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >TapisCL ICICLE</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Notebooks</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../hello_icicle_auth_clients/icicle_rel_03_2023/Notebooks/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Images</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../hello_icicle_auth_clients/images/readme/">Readme</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Tapis_Pods_Service/">Tapis Pods Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CI_Components_Catalog/">CI Components Catalog</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Animal Ecoloy</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital Agriculture</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Smart Foodsheds</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >PPODLinkML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../PPODLinkML/">PPOD_FSL - A LinkML Schema for UC Davis Food Systems Lab Applications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../PPODLinkML/LICENSE/">LICENSE</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Smart_Foodsheds_Visual_Analytics_Dashboard/">Smart Foodsheds Visual Analytics Dashboard</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">ICICLE Training Catalog</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AI for CI-for-AI</li>
+          <li class="breadcrumb-item">Harp</li>
+          <li class="breadcrumb-item">Examples</li>
+          <li class="breadcrumb-item">01 eulers number</li>
+      <li class="breadcrumb-item active">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="estimating-walltime-to-execute-calc_epy-with-given-configurations-for-application-calculating-eulers-number">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</h1>
+<p><strong>This code is from "https://github.com/CODARcode/cheetah"</strong></p>
+<p>To demonstrate the usage of HARP with Cheetah, we will look at a simple Python3 script that calculates Euler's number (<code>e</code>) using two different methods. It takes three positional arguments: the first is a string describing which of the methods to use, the second is a parameter to the calculation method that describes how many iterations or how precise to try to make the calculation (meaning depends on the method), and the third is a precision to use with the standard library Decimal module in python. If the third argument is not specified, built-in floating point is used instead.</p>
+<h2 id="the-application">The application</h2>
+<p>The source code is contained in a single source file: <a href="calc_e.py">calc_e.py</a>.
+There are no dependencies other than python3.</p>
+<h1 id="how-to-use-harp-to-estimate-the-walltime-for-the-program-calc_epy">How to use HARP to estimate the walltime for the program calc_e.py?</h1>
+<p>The current folder '01-eulers_number' is called target application folder. </p>
+<ol>
+<li>Navigate to the target application folder and copy the all the files from /Post_Execution_Scripts/basic into the the current folder. For more details about the type of application categories and profiling, please read the document or PPT .</li>
+<li>Edit the paths in "post_script.sh" to point to this folder (the target application folder). </li>
+<li>Edit the following files before applying the HARP framework to the application</li>
+<li>If running the pipeline on OSC, set the OSC project account in the campaign files "<em><em>campaign</em></em>.py". Ignore otherwise.
+    <code>class GrayScott(Campaign):
+        ...
+        scheduler_options = {'owens_gpu': {'project':'&lt;OSC-Project-Account&gt;'}}
+        ...</code></li>
+<li>
+<p>Adjust the paths for the <strong>cheetah_app_directory</strong> and ((cheetah_campaign_file** keys in pipeline_config.json file to pointto the current directory.</p>
+</li>
+<li>
+<p>Run the following commands to set/check the environment to run HARP framework</p>
+</li>
+<li>To load the module and set the environment on <strong>OSC</strong> (either in the command line mode or in the sbatch script)
+   <code>bash
+   module use $HOME/osc_apps/lmodfiles
+   module load harp 
+   export CONDA_HOME=&lt;path-to-conda-install&gt;/miniconda3
+   source $CONDA_HOME/bin/activate
+   source activate harp_env</code></li>
+<li>For running harp on <strong>Standalone Linux System</strong> Ensure that HARP_HOME environment variable is set to the HARP install directory and the Cheetah and HARP binaries are in PATH
+   <code>bash
+   echo $HARP_HOME 
+   echo $PATH</code></li>
+<li>Run the following commands to execute the framework from the target application folder</li>
+</ol>
+<pre><code class="language-bash">  cd &lt;path-to-01-eulers_number-
+  folder&gt;
+  chmod 755 *
+  harp pipeline_config.json
+</code></pre>
+<p><strong>Before executing the harp, make sure to modify the absolute-paths in 'pipeline_config.json' file to the target application folder i.e., this example folder.</strong></p>
+<ol>
+<li>The framework performs the following operations</li>
+<li>Generates training data with three different configurations (scaled-down, full-scale, and test-data), copies it to the pipeline/applications/<application-name>/train folder for further processing</li>
+<li>It pre-processes the data and transforms the training data using principal component analysis, upsamples full-scale executions to match scaled-down training samples, and trains and stores the regression models with different configurations</li>
+<li>The regression model with better predictions (lower no. of under-predictions and lower MAPE of over-estimations) suitable for Euler training data is selected and is used to predict the walltime estimations for the test-data configurations.
+The results of the framework are stored in predictions.csv in the target application folder.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../cheetah/tests/build_theta/" class="btn btn-neutral float-left" title="How to build dependencies on Theta"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../install-script-source/" class="btn btn-neutral float-right" title="README">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../cheetah/tests/build_theta/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../install-script-source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/tooltips.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

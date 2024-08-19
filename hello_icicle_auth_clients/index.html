@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Hello ICICLE Authentication Clients - ICICLE Training Catalog</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/cards.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hello ICICLE Authentication Clients";
+        var mkdocs_page_input_path = "hello_icicle_auth_clients/README.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ICICLE Training Catalog
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">ICICLE Training Catalog</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI for CI-for-AI</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Harp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../harp/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Cheetah</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../harp/cheetah/">Index</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/">Index</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/build_summit/">How to build the dependencies on Summit</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/cheetah/tests/build_theta/">How to build dependencies on Theta</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >01 eulers number</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/examples/01-eulers_number/">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Install script source</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../harp/install-script-source/">README</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Example</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../harp/install-script-source/example/">Local Install Script Example</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >iSpLib</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../iSpLib/">iSpLib - An Intelligent Sparse Library</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Architecture and Design</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Base_ICICLE_Tapis_Software/">Base ICICLE Tapis Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Event_Engine/">Event Engine</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Hello icicle auth clients</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Hello ICICLE Authentication Clients</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#software-releases">Software Releases</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#icicle_rel_03_2023">icicle_rel_03_2023</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#command-line-applications">Command Line Applications</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#about-the-team">About the Team</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#acknowledgement">Acknowledgement</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Icicle rel 03 2023</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="icicle_rel_03_2023/">Hello ICICLE Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >CLI</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="icicle_rel_03_2023/CLI/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >ICICONSOLE</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >TapisCL ICICLE</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Notebooks</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="icicle_rel_03_2023/Notebooks/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Images</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="images/readme/">Readme</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tapis_Pods_Service/">Tapis Pods Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CI_Components_Catalog/">CI Components Catalog</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Animal Ecoloy</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital Agriculture</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Camera traps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../camera-traps/RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Custom install</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/custom_install/">Camera Traps Custom Installer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../camera-traps/releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../camera-traps/src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Smart Foodsheds</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >PPODLinkML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../PPODLinkML/">PPOD_FSL - A LinkML Schema for UC Davis Food Systems Lab Applications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PPODLinkML/LICENSE/">LICENSE</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Smart_Foodsheds_Visual_Analytics_Dashboard/">Smart Foodsheds Visual Analytics Dashboard</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ICICLE Training Catalog</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Software Architecture and Design</li>
+          <li class="breadcrumb-item">Hello icicle auth clients</li>
+      <li class="breadcrumb-item active">Hello ICICLE Authentication Clients</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hello-icicle-authentication-clients">Hello ICICLE Authentication Clients</h1>
+<p>Repo for Authenticated Clients and Applications for ICICLE CI Services</p>
+<p><a name="top">Contents:
+* <a href="#overview">Overview</a>
+* <a href="#sw-release">Software Releases</a>
+* <a href="#about">About the Team</a>
+* <a href="#acks">Acknowledgement</a></p>
+<p><img src="images/HelloICICLE-Tapis-KG-Client-ArchDiag-apr-10-2023.png" alt="Hello ICICLE Tapis-KG Architecture" width="400px"></p>
+<h2 id="overview">Overview <a name="overview"></a></a></h2>
+<p>The Artificial Intelligence (AI) institute for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE) is funded by the NSF to build the next generation of Cyberinfrastructure to render AI more accessible to everyone and drive its further democratization in the larger society. ICICLE aims to develop intelligent cyberinfrastructure with transparent and high-performance execution on diverse and heterogeneous environments as well as advance plug-and-play AI that is easy to use by scientists across a wide range of domains, promoting the democratization of AI. The deep AI infrastructure that ICICLE plans to utilize to sift through data relies on knowledge graphs (KGs) in which information is stored in a graph database that uses a graph-structured data model or data model to represent a network of entities and the relationships between them. </p>
+<p>Finding a way to make KGs easily accessible and functional on high performance computing (HPC) systems is an important step in helping to democratize HPC. Thus a large focus of this project was contributing to the body of knowledge needed for hosting live, dynamic, and interactive services that interface with HPC systems hosting KGs for ICICLE based resources and services</p>
+<p>In this project, we develop Jupyter Notebooks and Python command line clients that will access ICICLE resources and services using ICICLE authentication
+mechanisms. To connect our clients, we used Tapis, which is a framework that supports computational research to enable scientists to access and utilize and manage multi-institution resources and services. We used Neo4j to organize data into a knowledge graph (KG). We then hosted the KG on a Tapis Pod, which offers persistent data storage with a template made specifically for Neo4j KGs. </p>
+<h2 id="software-releases">Software Releases<a name="sw-release"></a></a></h2>
+<h3 id="icicle_rel_03_2023"><a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/tree/main/icicle_rel_03_2023">icicle_rel_03_2023</a></h3>
+<p>For this software release, we focussed on developing authenticated connections to kubernetes pods hosted on any Tapis service. These applciations are stand-alone and can be installed separately. For details, see:
+* <a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/tree/main/icicle_rel_03_2023/CLI">Jupyter Notebooks</a>
+* <a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/tree/main/icicle_rel_03_2023/Notebooks">Command Line Interfaces</a></p>
+<h3 id="command-line-applications">Command Line Applications</h3>
+<p>Our CLI's are production software intended for use as interfaces to Tapis services hosted on HPC systems. These are ready to install and use, provided the proper <a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/tree/main/icicle_rel_03_2023/CLI">requirements</a> are fulfilled.</p>
+<h3 id="jupyter-notebooks">Jupyter Notebooks</h3>
+<p>The Jupyter notebooks in this repository are primarily <a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/tree/main/icicle_rel_03_2023/Notebooks/ExampleApplications">demonstrators</a> for working Tapis code, written in python. We also made an <a href="https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/icicle_rel_03_2023/Notebooks/TapisAuth/tapis_pods_auth.ipynb">extensible template notebook</a> which has Tapis auth prebuilt, and can be easily modified to carry out specific Tapis related tasks.</p>
+<p>The Notebooks and the CLIs each have their own directory and software requirements which are described here: </p>
+<h2 id="about-the-team">About the Team <a name="about"></a></h2>
+<p>This software was developed as part of the <a href="https://education.sdsc.edu/studenttech/rehs/">SDSC/UCSD Smmer 2022 REHS Project</a>, titled <a href="https://github.com/sdsc-hpc-students/REHS2022"><em>Developing Interactive Jupyter Notebooks to run on the SDSC HPC Expanse System and the “AI institute for Intelligent Cyberinfrastructure with Computational Learning in the Environment” (ICICLE) project.</em></a></p>
+<ul>
+<li><em>Project Lead:</em>  Mary Thomas, Ph.D., SDSC HPC Training lead, and Computational Data Scientist in the Data-Enabled Scientific Computing Division.</li>
+<li>REHS Students:</li>
+<li>Sahil Samar, Del Norte High School, San Diego, CA, sahilsamar031@gmail.com</li>
+<li>Mia Chen, Westview High School, San Diego, CA, mialunachen@gmail.com</li>
+<li>Jack Karpinski, San Diego High School, San Diego, CA, USA, jackadoo4@gmail.com</li>
+<li>Michael Ray, JSerra Catholic High School, San Juan Capistrano, CA, michael.ray@jserra.org</li>
+<li>Archita Sarin, Mission San Jose High School, Fremont, CA, archita.sarin@gmail.com</li>
+<li>Collaborators/Mentors:</li>
+<li>Christian Garcia, Engineering Scientist Associate (Texas Advanced Computing Center [5]).</li>
+<li>Matthew Lange, Ph.D., CEO, International Center for Food Ontology Operability Data and Semantics (IC-FOODS [4]); </li>
+<li>Joe Stubbs, Ph.D., Manager, Cloud &amp; Interactive Computing (Texas Advanced Computing Center [5]).</li>
+</ul>
+<h2 id="acknowledgement">Acknowledgement <a name="acks"></a></h2>
+<p>This work has been funded by grants from the National Science Foundation, including:
+* The AI Institute for Intelligent CyberInfrastructure with Computational Learning in the Environment (ICICLE) (<em>#2112606</em>)
+* The SDSC Expanse project (<em>#1928224</em>)
+* The TACC Stampede System (<em>#1663578</em>) 
+* Tapis projects (<em>#1931439</em>)
+* the NSF Track 3 Award: COre National Ecosystem for CyberinfrasTructure (CONECT) (<em>#2138307</em>) and the Extreme Science and Engineering Discovery Environment (XSEDE) (<em>ACI-1548562</em>).</p>
+<ul>
+<li>NOTES:</li>
+<li>YAML file: See</li>
+<li>Component Data Yaml file:  https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/components-data.yaml</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Event_Engine/" class="btn btn-neutral float-left" title="Event Engine"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="icicle_rel_03_2023/" class="btn btn-neutral float-right" title="Hello ICICLE Authentication Clients Software Release Notes:">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Event_Engine/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="icicle_rel_03_2023/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../js/tooltips.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

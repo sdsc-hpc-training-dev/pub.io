@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Camera Traps Custom Installer - ICICLE Training Catalog</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/cards.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Camera Traps Custom Installer";
+        var mkdocs_page_input_path = "camera-traps/custom_install/README.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> ICICLE Training Catalog
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">ICICLE Training Catalog</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI for CI-for-AI</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Harp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../harp/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Cheetah</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../harp/cheetah/">Index</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Tests</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../harp/cheetah/tests/">Index</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../harp/cheetah/tests/build_summit/">How to build the dependencies on Summit</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../harp/cheetah/tests/build_theta/">How to build dependencies on Theta</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Examples</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >01 eulers number</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../harp/examples/01-eulers_number/">Estimating walltime to execute "calc_e.py" with given configurations for application: Calculating Euler's number</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Install script source</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../harp/install-script-source/">README</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Example</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../harp/install-script-source/example/">Local Install Script Example</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >iSpLib</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../iSpLib/">iSpLib - An Intelligent Sparse Library</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Architecture and Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Base_ICICLE_Tapis_Software/">Base ICICLE Tapis Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Event_Engine/">Event Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Hello icicle auth clients</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../hello_icicle_auth_clients/">Hello ICICLE Authentication Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Icicle rel 03 2023</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../hello_icicle_auth_clients/icicle_rel_03_2023/">Hello ICICLE Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >CLI</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../hello_icicle_auth_clients/icicle_rel_03_2023/CLI/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >ICICONSOLE</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" >TapisCL ICICLE</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Notebooks</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../hello_icicle_auth_clients/icicle_rel_03_2023/Notebooks/">Hello Icicle Authentication Clients Software Release Notes:</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Images</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../hello_icicle_auth_clients/images/readme/">Readme</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Tapis_Pods_Service/">Tapis Pods Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CI_Components_Catalog/">CI Components Catalog</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Animal Ecoloy</span></p>
+              <ul>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Camera traps</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Custom install</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Camera Traps Custom Installer</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#basic-usage">Basic Usage</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#required-configuration">Required Configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#important-optional-configurations">Important Optional Configurations</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#all-configurations">All Configurations</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Digital Agriculture</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Camera traps</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">camera-traps</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../RELEASE_NOTES/">Camera Traps Release Notes</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Custom install</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Camera Traps Custom Installer</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#basic-usage">Basic Usage</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#required-configuration">Required Configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#important-optional-configurations">Important Optional Configurations</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#all-configurations">All Configurations</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >External plugins</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Image generating plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/image_generating_plugin/">Image Generating Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Image scoring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/image_scoring_plugin/">Image Scoring Plugin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Power measuring plugin</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../external_plugins/power_measuring_plugin/">Power Measure Plugin</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Releases</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../releases/">Running Released Versions of Camera-Traps</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >0.3.1</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" >Integration test</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Python</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../src/python/">ctevents</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Smart Foodsheds</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >PPODLinkML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../PPODLinkML/">PPOD_FSL - A LinkML Schema for UC Davis Food Systems Lab Applications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../PPODLinkML/LICENSE/">LICENSE</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Smart_Foodsheds_Visual_Analytics_Dashboard/">Smart Foodsheds Visual Analytics Dashboard</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">ICICLE Training Catalog</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Digital Agriculture</li>
+          <li class="breadcrumb-item">Camera traps</li>
+          <li class="breadcrumb-item">Custom install</li>
+      <li class="breadcrumb-item active">Camera Traps Custom Installer</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="camera-traps-custom-installer">Camera Traps Custom Installer</h1>
+<p>This directory contains the camera traps installer program to simplify the process of creating custom installations of the Camera Traps software based on a configuration file.</p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>To use the installer, execute the <code>install.sh</code> script within this directory,
+passing two positional arguments:</p>
+<ul>
+<li>Host directory: Absolute path on the host where the 
+  installer will look for input files and install 
+  Camera Traps.</li>
+<li>Input YAML file: path relative to Host directory where 
+  an input YAML file containing the configurations for 
+  the installation. This input is <em>optional</em>, the default
+  value is install_config.yml</li>
+</ul>
+<p>Example invocation:</p>
+<pre><code> $ ./install.sh /home/jstubbs/tmp/ct-installer my-input.yml
+</code></pre>
+<p>In the example above, the installer will look for a file
+called <code>my-input.yml</code> with absolute path <code>/home/jstubbs/tmp/ct-installer/my-input.yml</code> with the configurations 
+for the installation. </p>
+<p>Example contents of my-input.yml</p>
+<pre><code>install_dir: test
+use_gpu_in_scoring: true
+</code></pre>
+<p>The values in <code>my-input.yml</code> override defaults provided 
+by the installer. In the example above, the following
+will happen:</p>
+<ol>
+<li>Camera Traps installer will install the main docker-compose.yml file and all necessary directories and 
+additional files within the <code>test</code> directory of 
+<code>/home/jstubbs/tmp/ct-installer</code>. </li>
+<li>The image scoring plugin will be configured to use 
+GPUs on the host machine. </li>
+<li>All other default configurations will be used. </li>
+</ol>
+<p>See the following sections for details about the configurations available and defaults used.  </p>
+<h2 id="required-configuration">Required Configuration</h2>
+<p>The Input YAML file must provide values for the following
+fields:</p>
+<ul>
+<li><code>install_dir</code>: Relative path on the host (relative to 
+  Host directory) where the 
+  Camera Traps files will be installed.</li>
+</ul>
+<p>Example: <code>test</code></p>
+<h2 id="important-optional-configurations">Important Optional Configurations</h2>
+<ul>
+<li>
+<p><code>ct_version</code>: The release version (i.e., image tag) for 
+  the camera traps software container images.</p>
+</li>
+<li>
+<p>Example: 0.3.3</p>
+</li>
+<li>
+<p><code>run_containers_as_user</code>: Whether to run all containers 
+  as the user's (i.e., the installer's) UID and GID. (Default: true)</p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>use_gpu_in_scoring</code>: Whether to use GPUs with the 
+  Image Scoring pluging. Note that
+  the NVIDIA drivers must be installed, the NVIDIA container toolkit installed, and 
+  Docker must be configured to use it. See the main README for details on hardware requirements. (Default: false)</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>image_store_save_threshold</code>: The minimum confidence 
+  threshold for storing an image in full format.</p>
+</li>
+<li>
+<p>Example: 0.7</p>
+</li>
+<li>
+<p><code>image_store_reduce_save_threshold</code>: The minimum 
+  confidence threshold for storing an image in reduces/compressed format.</p>
+</li>
+<li>
+<p>Example: 0.4</p>
+</li>
+<li>
+<p><code>device_id</code>: The id of the device where the camera traps code will be installed. For example, 
+  this could be the id of a ChameleonCloud node or a TACC IoT device. By default, the string
+  <code>AAAAAAAAAAAAAAAAAAAA</code> is assigned for cases where the device id will not be needed. </p>
+</li>
+</ul>
+<p><strong>Source Images</strong></p>
+<p>One can control the source of images used for the 
+simulation in various ways. By default, the installer 
+users a pre-bundled set of example image. See below:</p>
+<ul>
+<li>
+<p><code>use_bundled_example_images</code>: Whether to use a set of 
+  bundled example images as the source of the input image.
+  When true, the use_image_directory and use_image_url settings are ignored. (Default: true)</p>
+</li>
+<li>
+<p><code>use_image_directory</code>: Whether to use a directory on 
+  the host as the source of the input images. If 
+  set to true, the source_image_dir variable must also be set. If set to false, a URL to a tar.gz file of images must be provided by setting use_image_url and source_image_url. (Default: false)</p>
+</li>
+<li>
+<p><code>source_image_dir</code>: Host directory containing example <br />
+  images to be used for the simulation. Only used if 
+  use_image_directory is set to true;</p>
+</li>
+<li>
+<p>Example: example_images</p>
+</li>
+<li>
+<p><code>use_image_url</code>: Whether to use a URL to a tar.gz file 
+  of images as the source of the input images. If 
+  set to true, the source_image_url variable must also be set. </p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>source_image_url</code>: URL to a tar.gz file of images to 
+  use as the input images. </p>
+</li>
+<li>
+<p>Example: <code>https://lilablobssc.blob.core.windows.net/snapshot-safari/KGA/KGA_S1.lila.zip</code></p>
+</li>
+<li>
+<p><code>use_custom_ground_truth_file_url</code>: Whether to use a custom ground truth file with the dataset. 
+  This only needs to be set when using a non-standard dataset. Default is false. When setting to true,
+  must also set the <code>custom_ground_truth_file_url</code> variable.</p>
+</li>
+<li>
+<p><code>custom_ground_truth_file_url</code>: URL to a custom ground truth file to download. This variable is only
+  used if <code>use_custom_ground_truth_file_url</code> is set to true. </p>
+</li>
+</ul>
+<p><strong>Specifying the Model</strong></p>
+<ul>
+<li>
+<p><code>use_custom_model_type</code>: Use one of the pre-defined model types. When true, must also specify <code>model_type</code>. 
+  (Default: false).</p>
+</li>
+<li>
+<p>Example: true </p>
+</li>
+<li>
+<p><code>model_type</code>: Specify the custom model type to use. Currently supported values are: <code>1</code>, <code>2</code>, <code>3</code>. 
+  This is a work in progress, more details coming. </p>
+</li>
+<li>
+<p><code>use_model_url</code>: Use a URL to a compatible ML model .pt 
+  file. Will be downloaded at the start of the scoring plugin execution. If true, must also specify model_url. </p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>model_url</code> (<em>currently not supported</em>): The URL to a model to download. Only used if use_model_url is true.</p>
+</li>
+<li>
+<p>Example: N/A</p>
+</li>
+</ul>
+<p><strong>Integrating with CKN</strong></p>
+<ul>
+<li>
+<p><code>deploy_ckn</code>: Whether to deploy the CKN capture daemon; required for integration with CKN. Default is false.</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>ckn_kafka_broker_address</code>: The remote address of the CKN Kafka broker. </p>
+</li>
+<li>
+<p>Example: <code>129.114.35.150</code></p>
+</li>
+<li>
+<p><code>ckn_kafka_broker_port</code>: The remote port of the CKN Kafka broker.</p>
+</li>
+<li>
+<p>Example: 9092</p>
+</li>
+<li>
+<p><code>experiment_id</code>: An id to associate all measurements from this execution with. For example, a Tapis Job id.
+  By default, this variable is set to none.</p>
+</li>
+<li>
+<p><code>user_id</code>: The user id of the owner of the experiment. By default, this variable is set to none.</p>
+</li>
+</ul>
+<h2 id="all-configurations">All Configurations</h2>
+<p>This is a complete list of all possible configurations.</p>
+<ul>
+<li><code>install_dir</code>: Relative path on the host (relative to 
+  Host directory) where the 
+  Camera Traps files will be installed.   ** Note ** all config paths are relative to this directory. </li>
+</ul>
+<p>Example: <code>test</code></p>
+<ul>
+<li>
+<p><code>ct_version</code>: The release version (i.e., image tag) for the camera traps software container images </p>
+</li>
+<li>
+<p>Example: 0.3.3</p>
+</li>
+<li>
+<p><code>host_config_dir</code>: Path on the host where configuration 
+  directory resides. </p>
+</li>
+<li>
+<p>Example: ./config </p>
+</li>
+<li>
+<p><code>use_host_pid</code>: Whether to start all plugin containers 
+  in the host PID namespace.</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>run_containers_as_user</code>: Whether to run all containers 
+  as the user's (i.e., the installer's) UID and GID</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>image_generating_monitor_power</code>: Whether to monitor 
+  the power usage of the image generating plugin. Default: true </p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>use_bundled_example_images</code>: Whether to use a set of 
+  bundled example images as the source of the input image.
+  When true, the use_image_directory and use_image_url settings are ignored.</p>
+</li>
+<li>
+<p><code>use_image_directory</code>: Whether to use a directory on 
+  the host as the source of the input images. If 
+  set to true, the source_image_dir variable must also be set. If set to false, a URL to a tar.gz file of images must be provided by setting use_image_url and source_image_url. </p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+</ul>
+<p><code>source_image_dir</code>: Host directory containing example 
+  images to be used for the simulation. Only used if 
+  use_image_directory is set to true;</p>
+<ul>
+<li>
+<p>Example: example_images</p>
+</li>
+<li>
+<p><code>use_image_url</code>: Whether to use a URL to a tar.gz file 
+  of images as the source of the input images. If 
+  set to true, the source_image_url variable must also be set. </p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>source_image_url</code>: URL to a tar.gz file of images to 
+  use as the input images. </p>
+</li>
+<li>
+<p>Example: <code>https://lilablobssc.blob.core.windows.net/snapshot-safari/KGA/KGA_S1.lila.zip</code></p>
+</li>
+<li>
+<p><code>use_gpu_in_scoring</code>: Whether to use GPUs with the 
+  Image Scoring pluging. Note that
+  the NVIDIA drivers must be installed, the NVIDIA container toolkit installed, and 
+  Docker must be configured to use it. See the main README for details on hardware requirements.</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>host_output_dir</code>: Host directory where output 
+ directories will be written. (relative to installation
+ directory)</p>
+</li>
+<li>
+<p>Example: output</p>
+</li>
+<li>
+<p><code>images_output_dir</code>: Host directory within the 
+  host_output_dir where the output images will be written. (Relative to <code>host_output_dir</code>)</p>
+</li>
+<li>
+<p>Example: images_output_dir</p>
+</li>
+<li>
+<p><code>image_store_save_threshold</code>: The minimum confidence 
+  threshold for storing an image in full format.</p>
+</li>
+<li>
+<p>Example: 0.7</p>
+</li>
+<li>
+<p><code>image_store_reduce_save_threshold</code>: The minimum 
+  confidence threshold for storing an image in reduces/compressed format.</p>
+</li>
+<li>
+<p>Example: 0.4</p>
+</li>
+<li>
+<p><code>oracle_plugin_output_dir</code>: Host directory within the 
+  host_output_dir where the oracle_plugin's outputs will be written. (Relative to <code>host_output_dir</code>)</p>
+</li>
+<li>
+<p>Example: oracle_output_dir</p>
+</li>
+<li>
+<p><code>image_generating_log_level</code>: Log level for image 
+  generating plugin.  </p>
+</li>
+<li>
+<p>Example: DEBUG, INFO </p>
+</li>
+<li>
+<p><code>image_scoring_plugin_image</code>: The image to use for the 
+  image scoring plugin, not including the tag</p>
+</li>
+<li>
+<p>Example: tapis/image_scoring_plugin_py_3.8</p>
+</li>
+<li>
+<p><code>image_scoring_log_level</code>: Log level for image scoring 
+  plugin.  </p>
+</li>
+<li>
+<p>Example: DEBUG, INFO </p>
+</li>
+<li>
+<p><code>image_scoring_monitor_power</code>: Whether to monitor the 
+  power usage of the image scoring plugin. Default: true </p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>image_scoring_crop_images</code>: Whether to crop images as 
+  part of the image scoring ML pipeline. (Default: false)</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>image_scoring_generate_bounding_boxes</code>: Whether to 
+  generate images with bounding boxes as part of the image scoring ML pipeline.</p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>use_custom_model_type</code>: Use one of the pre-defined model types. When true, must also specify <code>model_type</code>. 
+  (Default: false).</p>
+</li>
+<li>
+<p>Example: true </p>
+</li>
+<li>
+<p><code>model_type</code>: Specify the custom model type to use. Currently supported values are: <code>1</code>, <code>2</code>, <code>3</code>. 
+  This is a work in progress, more details coming. </p>
+</li>
+<li>
+<p><code>use_model_url</code>: Use a URL to a compatible ML model .pt 
+  file. Will be downloaded at the start of the scoring plugin execution. If true, must also specify model_url. </p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>model_url</code> (<em>currently not supported</em>): The URL to a model to download. Only used if use_model_url is true.</p>
+</li>
+<li>
+<p>Example: N/A</p>
+</li>
+<li>
+<p><code>run_power_monitor_privileged</code>: Whether to run the 
+  power monitor plugin container in privileged mode. Note: this is required 
+  to read the Intel RAPL (Linux Powercap) interface and power monitor backends may not function without it. (Default: true)</p>
+</li>
+<li>
+<p>Example: false </p>
+</li>
+<li>
+<p><code>use_gpu_in_power_monitoring</code>: Whether to use GPUs with 
+  the Power Monitroing pluging. At this time, there is no need to 
+  use GPUs in Power Monitoring, even if using them in Image Scoring, but this could change in a future release. 
+  Note that the NVIDIA drivers must be installed, the NVIDIA container toolkit installed, and 
+  Docker must be configured to use it. See the README for details on hardware requirements. (Default: false)</p>
+</li>
+<li>
+<p>Example: true</p>
+</li>
+<li>
+<p><code>power_monitor_log_level</code>: Log level for power 
+  monitoring plugin.</p>
+</li>
+<li>
+<p>Example: DEBUG, INFO </p>
+</li>
+<li>
+<p><code>power_monitor_backend</code>: The backend to use for 
+  measuring power. </p>
+</li>
+<li>
+<p>Example: powerjoular, scaphandre</p>
+</li>
+<li>
+<p><code>power_plugin_monitor_power</code>: Whether to monitor the 
+  power of the power monitoring plugin itself. (Default: true)</p>
+</li>
+<li>
+<p>Example: false </p>
+</li>
+<li>
+<p><code>power_output_dir</code>: Host directory within the 
+  host_output_dir where the output of the power plugin will be written. (Relative to <code>host_output_dir</code>)</p>
+</li>
+<li>
+<p>Example: power_output_dir</p>
+</li>
+<li>
+<p><code>power_monitor_mount_docker_socket</code>: Whether to mount 
+  the docker socket into the power monitor plugin container.
+  Required when using the powerjoular backend. (Default: true).</p>
+</li>
+<li>
+<p>Example: false</p>
+</li>
+<li>
+<p><code>oracle_plugin_image</code>: The image to use for the oracle 
+  plugin, not including the tag. (Default: tapis/oracle_plugin)</p>
+</li>
+<li>
+<p>Example: tapis/oracle_plugin</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../RELEASE_NOTES/" class="btn btn-neutral float-left" title="Camera Traps Release Notes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../external_plugins/image_generating_plugin/" class="btn btn-neutral float-right" title="Image Generating Plugin">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../RELEASE_NOTES/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../external_plugins/image_generating_plugin/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/tooltips.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
