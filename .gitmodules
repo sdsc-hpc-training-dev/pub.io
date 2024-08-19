@@ -1,0 +1,36 @@
+[submodule "test2"]
+	path = test2
+	url = https://github.com/DavidL0914/test2.git
+[submodule "expanse-101-refactor"]
+	path = expanse-101-refactor
+	url = https://github.com/sdsc-hpc-training-dev/expanse-101-refactor.git
+[submodule "notebooks-101-dev"]
+	path = notebooks-101-dev
+	url = https://github.com/sdsc-hpc-training-dev/notebooks-101-dev.git
+[submodule "galyleo"]
+	path = galyleo
+	url = https://github.com/mkandes/galyleo.git
+[submodule "basic_skills"]
+	path = basic_skills
+	url = https://github.com/sdsc-hpc-training-org/basic_skills.git
+[submodule "harp"]
+	path = harp
+	url = https://github.com/ICICLE-ai/harp.git
+[submodule "iSpLib"]
+	path = iSpLib
+	url = https://github.com/ICICLE-ai/iSpLib.git
+[submodule "documentation"]
+	path = documentation
+	url = https://github.com/tapis-project/documentation.git
+[submodule "hello_icicle_auth_clients"]
+	path = hello_icicle_auth_clients
+	url = https://github.com/ICICLE-ai/hello_icicle_auth_clients.git
+[submodule "camera-traps"]
+	path = camera-traps
+	url = https://github.com/tapis-project/camera-traps.git
+[submodule "PPODLinkML"]
+	path = PPODLinkML
+	url = https://github.com/ICICLE-ai/PPODLinkML.git
+[submodule "yamltest"]
+	path = yamltest
+	url = https://github.com/DavidL0914/yamltest.git

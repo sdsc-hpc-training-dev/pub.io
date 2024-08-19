@@ -1,0 +1,18 @@
+nav:
+    - index.md
+    - AI for CI-for-AI:
+      - harp
+      - iSpLib
+    - Software Architecture and Design:
+      - Base_ICICLE_Tapis_Software.md
+      - Event_Engine.md
+      - hello_icicle_auth_clients
+      - Tapis_Pods_Service.md
+      - CI_Components_Catalog.md
+    - Animal Ecoloy:
+      - camera-traps
+    - Digital Agriculture:
+      - camera-traps
+    - Smart Foodsheds:
+      - PPODLinkML
+      - Smart_Foodsheds_Visual_Analytics_Dashboard.md

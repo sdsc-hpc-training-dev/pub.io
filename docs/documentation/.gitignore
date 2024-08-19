@@ -1,0 +1,9 @@
+build
+.idea
+/tapis-documentation.iml
+/.venv/
+source/_build
+.vscode
+Pipfile
+Pipfile.lock
+*/**/__pycache__

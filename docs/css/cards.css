@@ -1,0 +1,106 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  width: calc(33.333% - 32px);
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* Card color classes based on category */
+.category1 {
+  background-color: #f8d7da;
+}
+
+.category2 {
+  background-color: #d1ecf1; 
+}
+
+.category3 {
+  background-color: #d4edda; 
+}
+
+.default-category {
+  background-color: #f5f5f5;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+.card a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Second toggle view for card display */
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-view .card {
+  flex: 1 1 calc(33.333% - 32px); 
+  margin: 8px; 
+  padding: 8px; 
+  box-sizing: border-box;
+}
+
+.grid-view .card h3 {
+  font-size: 1.2em;
+  margin-bottom: 4px; 
+}
+
+.grid-view .card p {
+  font-size: 0.9em;
+  margin-bottom: 4px; 
+}
+
+.grid-view .card .version {
+  font-size: 0.8em;
+  color: gray;
+  margin-top: 2px; 
+  margin-bottom: 4px;
+}
+
+
+.toggle-button {
+  margin: 16px;
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+
+.list-view .card {
+  width: 100%; 
+}
+
+.italic {
+  font-style: italic;
+}
